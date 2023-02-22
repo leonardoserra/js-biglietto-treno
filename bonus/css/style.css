@@ -34,7 +34,10 @@ h3{
     padding: 5px;
     border: 2px solid rgb(39, 38, 38);
     border-radius: 10px;
+    transition: box-shadow 1s;
+
 }
+
  a{
     text-decoration: none;
     color: rgb(39, 38, 38);
@@ -45,6 +48,15 @@ header ul{
     border: 2px solid rgb(39, 38, 38);
     border-radius: 10px;
     list-style: none;
+    transition: box-shadow 1s;
+}
+
+ul:hover{
+    box-shadow: -5px -3px  rgb(39, 38, 38);
+}
+
+a:hover{
+    color: red;
 }
 
 
@@ -108,4 +120,19 @@ main h3{
     left: 50%;
     transform:translateX(-50%);
     width: 50%;
+    transition: box-shadow 1s;
+
+}
+
+h3:hover{
+    box-shadow: -5px -3px  rgb(39, 38, 38);
+}
+
+
+/*footer*/
+
+footer{
+    height: 10px;
+    text-align: center;
+    padding-bottom: 5px;
 }
