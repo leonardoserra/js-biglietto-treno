@@ -13,14 +13,22 @@ if(isNaN(age)||isNaN(distance)){
 } else{ 
 
     if(age < 18){
+
         price = price - ((price*20)/100);
-        document.getElementById("costo").innerHTML = `Buongiorno, il biglietto costa ${price}€ perchè sei under18 e hai uno sconto del 20%. Buon Viaggio!`
+        document.getElementById("messaggio").innerHTML = `Buongiorno, sei under18 perció hai uno sconto del 20%:`
+        document.getElementById("costo").innerHTML = `- il biglietto costa ${price}€. Buon Viaggio!`
 
     }else if (age >= 65){
+
         price = price - ((price*40)/100);
-        document.getElementById("costo").innerHTML = `Buongiorno, il biglietto costa ${price}€ perchè sei over65 e hai uno sconto del 40%. Buon Viaggio!`
+        document.getElementById("messaggio").innerHTML = `Buongiorno, lei ha diritto allo sconto over65 del 40%:`
+        document.getElementById("costo").innerHTML = `- il biglietto costa ${price}€. Buon Viaggio!`
+    
     } else{
-        document.getElementById("costo").innerHTML = `Buongiorno, il biglietto costa ${price}€. Buon Viaggio!`
+
+        document.getElementById("messaggio").innerHTML = `Buongiorno, il prezzo del biglietto è il seguente:`
+        document.getElementById("costo").innerHTML = `${price}€. Buon Viaggio!`
+
     }
     
 }
