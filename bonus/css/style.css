@@ -4,3 +4,39 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+.container{
+    margin: auto;
+    max-width: 1070px;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: rgb(248, 52, 52);
+    border-bottom: 2px solid rgb(39, 38, 38);
+}
+
+header h3{ 
+    background-color: antiquewhite;
+    padding: 5px;
+    border: 2px solid rgb(39, 38, 38);
+    border-radius: 10px;
+}
+header a{
+    text-decoration: none;
+    color: rgb(39, 38, 38);
+}
+header ul{
+    background-color: antiquewhite;
+    padding: 5px;
+    border: 2px solid rgb(39, 38, 38);
+    border-radius: 10px;
+    list-style: none;
+}
+
+main{
+    margin-top: 50px;
+}
